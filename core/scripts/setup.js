@@ -280,13 +280,6 @@ class Backend extends Abstract {
         config.magento2.api.accessToken = this.answers.m2_api_access_token
         config.magento2.api.accessTokenSecret = this.answers.m2_api_access_token_secret
 
-        config.i18n.defaultLocale = this.answers.defaultLocale
-        config.i18n.currencyCode = this.answers.currencyCode
-        config.i18n.currencySign = this.answers.currencySign
-        config.i18n.defaultLocale = this.answers.locale
-        config.i18n.availableLocale.push(this.answers.locale)
-
-        config.theme = "@vue-storefront/theme-default-rtl"
 
 
         jsonFile.writeFileSync(TARGET_BACKEND_CONFIG_FILE, config, {spaces: 2})
@@ -472,6 +465,8 @@ class Storefront extends Abstract {
 
         config.i18n.defaultLocale = this.answers.locale
         config.i18n.availableLocale.push(this.answers.locale)
+
+        config.theme = "@vue-storefront/theme-default-rtl"
 
         config.install = {
           is_local_backend: Abstract.wasLocalBackendInstalled,
@@ -839,7 +834,7 @@ async function processAnswers (answers) {
   let manager = new Manager(answers)
 
   await manager.tryToCreateLogFiles()
-    //.then(manager.initBackend.bind(manager))
+    .then(manager.initBackend.bind(manager))
     .then(manager.initStorefront.bind(manager))
     .then(manager.showGoodbyeMessage.bind(manager))
     .catch(Message.error)
