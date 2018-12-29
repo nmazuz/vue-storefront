@@ -27,6 +27,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production pm2 start ecosystem.json $PM2_ARGS",
     "installer": "node ./core/scripts/installer",
+    "setup": "node ./core/scripts/setup --isRemoteBackend=false --imagesEndpoint=img/ --backendDir=../vue-storefront-api --m2ApiOauth2=true --m2Url=http://pasha.test --m2ApiUrl=http://pasha.test/rest --m2ApiConsumerKey=s32241fnw7wsxhqrhj9mhck8r53d5slq --m2ApiConsumerSecret=7evj4vlmrn2dv0v3twkw96ffn1tmxwwu --m2ApiAccessToken=jyvlq1fgswdsswqdifc5187f1hh474ey --m2ApiAccessTokenSecret=7o4rq0l7s3wxvw8yp8go649a7x7cxtrv --locale=he_IL ",
     "installer:ci": "yarn installer --default-config",
     "all": "cross-env NODE_ENV=development node ./core/scripts/all",
     "cache": "node ./core/scripts/cache",
