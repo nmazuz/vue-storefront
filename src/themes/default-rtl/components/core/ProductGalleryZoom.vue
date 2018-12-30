@@ -66,7 +66,6 @@ export default {
 </script>
 <style lang="scss">
 @import '~theme/css/base/global_vars';
-@import '~theme/css/layout/direction';
 $z-index-gallery: map-get($z-index, overlay) + 1;
 
 .media-zoom {
@@ -156,7 +155,6 @@ $z-index-gallery: map-get($z-index, overlay) + 1;
   .VueCarousel-inner,
   .VueCarousel-slide {
     height: 100%;
-    direction: ltr;
   }
 
   &__slide {

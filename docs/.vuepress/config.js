@@ -5,7 +5,6 @@ module.exports = {
     repo: 'DivanteLtd/vue-storefront',
     docsDir: 'docs',
     editLinks: true,
-    sidebarDepth: 3,
     nav: [
       {
         text: 'YouTube',
@@ -81,7 +80,6 @@ module.exports = {
             'data/elastic-queries',
             'data/database-tool',
             'data/entity-types',
-            'data/static-data',
           ],
         },
         {
@@ -110,14 +108,7 @@ module.exports = {
         {
           title: 'Modules',
           collapsable: false,
-          children: [
-            'modules/introduction',
-            'modules/cart',
-            // 'modules/catalog',
-            'modules/user',
-            'modules/checkout',
-            'modules/order',
-          ],
+          children: ['modules/introduction', 'modules/cart'],
         },
         {
           title: 'Integrations',
@@ -131,7 +122,6 @@ module.exports = {
             'integrations/tier-prices-sync',
             'integrations/totals-sync',
             'integrations/multistore',
-            'integrations/product-reviews',
           ],
         },
       ],

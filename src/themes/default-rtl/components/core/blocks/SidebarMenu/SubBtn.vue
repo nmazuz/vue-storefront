@@ -8,7 +8,7 @@
     data-testid="categoryButton"
   >
     {{ name }}
-    <i class="material-icons">keyboard_arrow_left</i>
+    <i class="material-icons">keyboard_arrow_right</i>
   </button>
   <button
     class="inline-flex p15 between-xs"
@@ -18,7 +18,7 @@
     :aria-label="$t('Back')"
   >
     {{ name }}
-    <i class="material-icons">keyboard_arrow_right</i>
+    <i class="material-icons">keyboard_arrow_left</i>
   </button>
 </template>
 <script>

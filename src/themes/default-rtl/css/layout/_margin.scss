@@ -35,14 +35,14 @@ $margin-right-p: 5;
   }
   @each $i in $margin-x-px {
     .mx#{$i} {
-      margin-#{$start-direction}: #{$i}px;
-      margin-#{$end-direction}: #{$i}px;
+      margin-left: #{$i}px;
+      margin-right: #{$i}px;
     }
   }
   @each $i in $margin-x-p {
     .mx#{$i}p {
-      margin-#{$start-direction}: percentage($i/100);
-      margin-#{$end-direction}: percentage($i/100);
+      margin-left: percentage($i/100);
+      margin-right: percentage($i/100);
     }
   }
   @each $i in $margin-y-px {
@@ -79,22 +79,22 @@ $margin-right-p: 5;
   }
   @each $i in $margin-left-px {
     .ml#{$i} {
-      margin-#{$start-direction}: #{$i}px;
+      margin-left: #{$i}px;
     }
   }
   @each $i in $margin-left-p {
     .ml#{$i}p {
-      margin-#{$start-direction}: percentage($i/100);
+      margin-left: percentage($i/100);
     }
   }
   @each $i in $margin-right-px {
     .mr#{$i} {
-      margin-#{$end-direction}: #{$i}px;
+      margin-right: #{$i}px;
     }
   }
   @each $i in $margin-right-p {
     .mr#{$i}p {
-      margin-#{$end-direction}: percentage($i/100);
+      margin-right: percentage($i/100);
     }
   }
 }

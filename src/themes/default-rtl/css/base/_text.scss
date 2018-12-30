@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   font-family: $base-font;
   font-weight: 400;
-
+  direction: $direction;
 }
 
 h1,
@@ -13,7 +13,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $text-font;
+  font-family: 'Playfair Display', serif;
 }
 
 h1,
@@ -48,10 +48,10 @@ h6,
 
 // Atomic styles for text
 .serif {
-  font-family: $text-font;
+  font-family: 'Playfair Display', serif;
 }
 .sans-serif {
-  font-family: $base-font;
+  font-family: 'Roboto', sans-serif;
 }
 
 .uppercase {
@@ -62,7 +62,7 @@ h6,
   text-align: center;
 }
 .align-right {
-  text-align:right;
+  text-align: right;
 }
 .align-left {
   text-align: left;

@@ -834,7 +834,7 @@ async function processAnswers (answers) {
   let manager = new Manager(answers)
 
   await manager.tryToCreateLogFiles()
-    .then(manager.initBackend.bind(manager))
+    //.then(manager.initBackend.bind(manager))
     .then(manager.initStorefront.bind(manager))
     .then(manager.showGoodbyeMessage.bind(manager))
     .catch(Message.error)

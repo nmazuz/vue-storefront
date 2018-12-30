@@ -25,14 +25,14 @@ $padding-x-p: 10;
   }
   @each $i in $padding-x-px {
     .px#{$i} {
-      padding-#{$start-direction}: #{$i}px;
-      padding-#{$end-direction}: #{$i}px;
+      padding-left: #{$i}px;
+      padding-right: #{$i}px;
     }
   }
   @each $i in $padding-x-p {
     .px#{$i}p {
-      padding-#{$start-direction}: percentage($i/100);
-      padding-#{$end-direction}: percentage($i/100);
+      padding-left: percentage($i/100);
+      padding-right: percentage($i/100);
     }
   }
   @each $i in $padding-y-px {
@@ -53,12 +53,12 @@ $padding-x-p: 10;
   }
   @each $i in $padding-right-px {
     .pr#{$i} {
-      padding-#{$end-direction}: #{$i}px;
+      padding-right: #{$i}px;
     }
   }
   @each $i in $padding-left-px {
     .pl#{$i} {
-      padding-#{$start-direction}: #{$i}px;
+      padding-left: #{$i}px;
     }
   }
 }
